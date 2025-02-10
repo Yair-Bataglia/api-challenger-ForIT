@@ -1,6 +1,6 @@
 # 🚀 Proyecto: Frontend y Backend con TypeScript
 
-Este proyecto consta de un **Frontend** desarrollado con **Vite** y un **Backend** en **Node.js con Express**, ambos escritos en **TypeScript**. La aplicación permite obtener datos desde un JSON almacenado localmente en el servidor, manteniéndolo actualizado con un endpoint externo y agregando información ingresada por el usuario. Luego, esta API es consumida por el cliente, mostrando en formato de tarjetas a los "usuarios" de la base.
+Este proyecto consta de un **Frontend** desarrollado con **Vite** y un **Backend** en **Node.js con Express**, ambos escritos en **TypeScript**. La aplicación permite obtener datos desde un JSON almacenado localmente en el servidor, manteniéndolo actualizado con un endpoint externo y agregando información ingresada por el usuario. Luego, esta API es consumida por el cliente, mostrando en formato de tarjetas a los "usuarios" de la base. El cliente puede filtrar la informacion o agregar nueva.
 
 ---
 
