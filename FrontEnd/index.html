@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>Vite + TS</title>
+</head>
+
+<body>
+  <div id="filtro" class="hidden"></div>
+  <div id="modal" class="hidden">
+    <div id="content-modal">
+      <button id="cerrar-modal-btn"><span class="material-symbols-outlined">
+          close
+        </span></button>
+      <h2>Agregar nuevo usuario</h2>
+      <form id="form-modal">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="empresa">Empresa:</label>
+        <input type="text" id="empresa" name="empresa" required>
+
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" required>
+
+        <label for="telefono">Telefono:</label>
+        <input type="text" id="telefono" name="telefono" required>
+
+        <button type="submit">Agregar</button>
+      </form>
+    </div>
+  </div>
+  <header>
+    <div id="cabezal">
+      <div class="title">
+        <h1>ForIT Ejercicio</h1>
+        <!-- <span>Yair Bataglia</span> -->
+      </div>
+      <button id="agregar-btn"><span class="material-symbols-outlined">person_add
+        </span></button>
+    </div>
+  </header>
+  <main>
+    <div id="buscador">
+      <input id="search" placeholder="Filtrar usuarios" type="text">
+      <span class="material-symbols-outlined">
+        search
+      </span>
+    </div>
+    <div id="container">
+      <h2>Usuarios</h2>
+      <section id="tarjets">
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>©2025</p>
+  </footer>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

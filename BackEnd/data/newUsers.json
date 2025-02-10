@@ -1,0 +1,71 @@
+[
+  {
+    "id": 11,
+    "name": "Yair",
+    "username": "yair.bata",
+    "email": "batagliayair@gmail.com",
+    "address": {
+      "street": "",
+      "suite": "",
+      "city": "BsAs",
+      "zipcode": "",
+      "geo": {
+        "lat": "",
+        "lng": ""
+      }
+    },
+    "phone": "1188336655",
+    "website": "",
+    "company": {
+      "name": "gggroup",
+      "catchPhrase": "",
+      "bs": ""
+    }
+  },
+  {
+    "id": 12,
+    "name": "Marcelo",
+    "username": "mar.ss.mar",
+    "email": "candelafortinera@live.com.ar",
+    "address": {
+      "street": "",
+      "suite": "",
+      "city": "Cocodrili",
+      "zipcode": "",
+      "geo": {
+        "lat": "",
+        "lng": ""
+      }
+    },
+    "phone": "1664997285",
+    "website": "",
+    "company": {
+      "name": "maribu",
+      "catchPhrase": "",
+      "bs": ""
+    }
+  },
+  {
+    "id": 13,
+    "name": "Eduardo",
+    "username": "El.yoyo",
+    "email": "batagliayair@gmail.com",
+    "address": {
+      "street": "",
+      "suite": "",
+      "city": "Merlo",
+      "zipcode": "",
+      "geo": {
+        "lat": "",
+        "lng": ""
+      }
+    },
+    "phone": "01169579149",
+    "website": "",
+    "company": {
+      "name": "Empresss",
+      "catchPhrase": "",
+      "bs": ""
+    }
+  }
+]

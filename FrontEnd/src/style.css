@@ -1,0 +1,376 @@
+:root {
+  --color-dark-one: #121212;
+  --color-dark-two: #282828;
+  --color-dark-tree: #3f3f3f;
+  --color-dark-four: #575757;
+
+  --color-primary-one: #7cd3b1;
+  --color-primary-two: #8cd8b9;
+  --color-primary-tree: #9bddc2;
+  --color-primary-four: #aae2ca;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary-two) #2b2b2b00;
+}
+
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #f0f0f0;
+
+
+  height: 100vh;
+  background-color: #222426;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#filtro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000bb;
+  z-index: 999;
+  pointer-events: none;
+  display: none;
+}
+
+#modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1000;
+
+  place-items: center;
+}
+
+#content-modal {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 70%;
+  height: 80%;
+  background-color: var(--color-dark-one);
+  border: 2px var(--color-primary-one) solid;
+  box-shadow: 0px 1rem 3rem rgb(0, 0, 0);
+  color: white;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+#content-modal h2 {
+  color: var(--color-primary-two);
+  margin-bottom: 1rem;
+}
+
+#cerrar-modal-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#cerrar-modal-btn span {
+  font-size: 2rem;
+}
+
+#cerrar-modal-btn:hover {
+  color: #ff5555;
+}
+
+form {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, min-content);
+}
+
+form label {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+form input {
+  height: 2rem;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-dark-two);
+  background: #2a2a2a;
+  color: white;
+  font-size: 1rem;
+}
+
+form input:focus {
+  outline: none;
+  border-color: var(--color-primary-one);
+}
+
+form button[type="submit"] {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px var(--color-primary-two) solid;
+  background-color: var(--color-dark-one);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  color: #121212;
+  background-color: var(--color-primary-two);
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+header {
+  background-color: var(--color-dark-one);
+  width: 100%;
+  border-bottom: 2px outset var(--color-primary-one);
+
+  display: grid;
+  justify-items: center;
+}
+
+
+header span {
+  color: var(--color-primary-one);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#cabezal {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+}
+.title{
+  display: grid;
+  grid-template-rows: max-content max-content;
+  align-items: start;
+}
+h1 {
+  margin: 1rem 0px;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+#agregar-btn {
+  background: none;
+  border: none;
+}
+
+#agregar-btn:hover {
+  cursor: pointer;
+}
+
+#agregar-btn span {
+  font-size: 2rem;
+}
+
+
+main {
+  overflow-y: auto;
+  background-color: var(--color-dark-one);
+
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content 1fr;
+}
+
+#buscador {
+  width: 90%;
+  margin: 2rem 0px;
+  place-items: center;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+}
+
+#buscador input {
+  width: 100%;
+  height: 2rem;
+  background-color: var(--color-dark-two);
+  border: none;
+
+  color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 1rem;
+
+}
+
+
+#buscador span {
+  color: var(--color-primary-one);
+  margin: 0px 1rem;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+#container {
+  border-top: 1px outset var(--color-primary-one);
+
+  width: 90%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content 1fr;
+}
+
+#container h2 {
+  margin: 1rem 0px;
+}
+
+#tarjets {
+
+  padding: 1rem;
+  border-radius: 1rem;
+
+  display: grid;
+  gap: 1rem;
+  /* grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-template-rows: max-content;
+  justify-content: left;
+}
+
+.tarjet {
+  background-color: var(--color-dark-two);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: left;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr max-content max-content;
+}
+
+.label {
+  font-size: .9rem;
+  color: #7a7a7a;
+}
+
+span.separador {
+  color: var(--color-primary-two);
+  font-size: 1rem;
+}
+
+.tarjet .nombre {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary-one);
+}
+
+footer {
+  border-top: 2px outset #588b64;
+  background-color: #121212;
+  height: 50px;
+  width: 100%;
+
+  display: grid;
+  place-content: center;
+}
+
+
+/* Media query para pantallas grandes (pantallas de escritorio) */
+@media (max-width: 432px) {
+  body {
+    font-size: 1rem;
+  }
+
+  #content-modal {
+    width: 90%;
+    height: 90%;
+  }
+
+  form label {
+    font-size: 1.1rem;
+  }
+
+  form input {
+    height: 3rem;
+  }
+
+  form button[type="submit"] {
+    font-size: 1.4rem;
+  }
+
+  #buscador input {
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+
+  #buscador span {
+    display: none;
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+  #content-modal {
+    width: 40%;
+    height: 90%;
+  }
+
+  form label {
+    font-size: 1rem;
+  }
+
+  form input {
+    height: 2.6rem;
+  }
+
+  form button[type="submit"] {
+    font-size: 1.2rem;
+  }
+
+  #buscador input {
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  #buscador span {
+    display: none;
+  }
+
+}
