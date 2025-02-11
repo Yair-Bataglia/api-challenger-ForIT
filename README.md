@@ -28,7 +28,7 @@ Este proyecto consta de un **Frontend** desarrollado con **Vite** y un **Backend
 ## 📌 Requisitos
 - **Node.js** (versión recomendada: 18+)
 
-## 🚀 Instalación y ejecución
+## 🚀 Ejecución
 Para probar el proyecto, sigue estos pasos:
 
 1. Clona el repositorio:
