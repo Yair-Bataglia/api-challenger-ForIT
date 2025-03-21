@@ -23,7 +23,7 @@ formModal.addEventListener('submit', async (e: Event) => {
 
 
     try {
-        const res = await fetch('api/add', {
+        const res = await fetch('https://api-challenger-forit.onrender.com/api/add', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json", 
